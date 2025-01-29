@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 
 export default function Loading() {
-  
   useEffect(() => {
     setTimeout(() => {
       document.querySelector('img').style.transform = 'translateY(-100%)';
@@ -10,7 +9,7 @@ export default function Loading() {
   }, []);
 
   return (
-    <div className="absolute z-[100] w-full flex justify-center items-center h-screen bg-gray-950">
+    <div className="absolute z-[100] w-full flex justify-center items-center h-screen bg-[#3E2723]">
       <img src={`./logo.png`} alt="Loading" className="w-72 h-62" />
     </div>
   );
