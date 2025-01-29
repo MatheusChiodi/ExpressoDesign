@@ -17,7 +17,7 @@ export default function NavBar() {
         transition: { duration: 0.6, ease: 'easeOut' },
       }}
     >
-      <div className="max-w-[1920px] bg-[#3E2723] text-[#F5EBDC] shadow-2xl  mx-auto flex lg:justify-between justify-between items-center h-16 px-4 lg:px-10">
+      <div className="max-w-[1920px] bg-[#3E2723] text-[#F5EBDC] shadow-2xl  mx-auto flex lg:justify-between justify-between items-center h-16 px-4 lg:px-10 rounded-b-3xl">
         {/* Logo com efeito 3D */}
         <motion.div
           className="flex items-center space-x-2"
