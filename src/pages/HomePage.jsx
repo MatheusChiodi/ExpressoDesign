@@ -8,6 +8,7 @@ import SlideWallpaper from '../components/SlideWallpaper';
 import Benefits from '../components/Benefits';
 import CoffeeCarousel from '../components/CoffeeCarousel';
 import Divider from '../components/Divider';
+import FeedBack from '../components/FeedBack';
 
 function HomePage() {
   const [visibleLoading, setVisibleLoading] = useState(false);
@@ -39,10 +40,9 @@ function HomePage() {
           <NavBar />
           <SlideWallpaper />
           <Benefits />
-          <div className="bg-[#f1f0ee]">
-            <CoffeeCarousel />
-          </div>
+          <CoffeeCarousel />
           <Divider />
+          <FeedBack />
           <Footer />
           <ScrollToTopButton />
         </>
