@@ -11,7 +11,7 @@ import {
 export default function Footer() {
   return (
     <motion.footer
-      className="relative w-full bg-[#3E2723] text-[#F5EBDC] px-6 py-8 mt-10 rounded-t-3xl shadow-2xl"
+      className="relative w-full bg-[#3E2723] text-[#f1f0ee] px-6 py-8 shadow-2xl"
       initial={{ y: 50, opacity: 0 }}
       animate={{
         y: 0,

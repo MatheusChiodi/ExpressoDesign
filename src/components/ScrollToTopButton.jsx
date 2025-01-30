@@ -25,13 +25,13 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <motion.div
           onClick={scrollToTop}
-          className="cursor-pointer bg-gray-900 text-white p-1 rounded-lg shadow-lg"
+          className="cursor-pointer bg-[#986b56] text-white p-1 rounded-lg shadow-lg"
           initial={{ opacity: 0, scale: 0.5, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
           whileHover={{
             scale: 1.05,
-            backgroundColor: '#00CFFD',
+            backgroundColor: '#81411d',
             color: '#fff',
             boxShadow: '0 4px 12px rgba(0, 0, 0, 0.25)'
           }}

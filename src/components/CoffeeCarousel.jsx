@@ -2,36 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Heart } from 'lucide-react';
 
-const coffees = [
-  {
-    id: 1,
-    name: 'Lungo Coffee',
-    description: 'An espresso coffee drink, topped with a small layer of foam.',
-    price: '199',
-    image: './coffees/coffee1.png',
-  },
-  {
-    id: 2,
-    name: 'Dalgona Coffee',
-    description: 'Whipped coffee made using instant coffee.',
-    price: '159',
-    image: './coffees/coffee2.png',
-  },
-  {
-    id: 3,
-    name: 'Iced Coffee',
-    description: 'Iced coffee is a coffee beverage served cold.',
-    price: '149',
-    image: './coffees/coffee3.png',
-  },
-  {
-    id: 4,
-    name: 'Filter Coffee',
-    description: '70% coffee and 30% chicory freshly roasted.',
-    price: '59',
-    image: './coffees/coffee4.png',
-  },
-];
+import Button from './Button';
+import coffees from '../data/coffees';
 
 export default function CoffeeCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +17,7 @@ export default function CoffeeCarousel() {
   };
 
   return (
-    <div className="w-full max-w-[1920px] mx-auto py-10 px-2">
+    <div className="w-full max-w-[1920px] mx-auto py-10 px-2 bg-[#f1f0ee]">
       <h2 className="text-2xl font-bold mb-6 text-center">
         OUR SPECIAL COFFEE
       </h2>
@@ -80,10 +52,8 @@ export default function CoffeeCarousel() {
                 <p className="text-sm text-gray-600 mt-2">
                   {coffee.description}
                 </p>
-                <p className="text-lg font-bold mt-2">Rs. {coffee.price}</p>
-                <button className="mt-2 px-4 py-2 bg-[#6F432A] text-white rounded-lg shadow-md hover:scale-105 transition">
-                  Order Now
-                </button>
+                <p className="text-lg font-bold my-2">Rs. {coffee.price}</p>
+                <Button title="Order Now" />
               </div>
             </motion.div>
           ))}
